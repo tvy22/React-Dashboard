@@ -23,23 +23,24 @@ function Sidebar() {
             key={li.name}
             to={li.path}
             className={({ isActive }) =>
-              `flex items-center gap-3 p-3 text-lg font-medium text-black rounded-md transition w-full sm:w-full md:w-auto
+              `flex sm:flex-row flex-col items-center sm:items-start justify-center sm:justify-start p-3 text-lg font-medium text-black rounded-md transition sm:w-full w-16 
               ${isActive ? "bg-blue-100 text-blue-500" : "hover:bg-blue-100"}`}
           >
             {li.icon}
-            <span className="hidden sm:inline">{li.name}</span>
+            <span className="hidden sm:inline ml-3">{li.name}</span>
           </NavLink>
         ))}
 
         {/* Sign Out Button */}
         <NavLink
           to="/logout"
-          className="flex items-center gap-3 p-3 text-lg font-medium text-black rounded-md transition hover:bg-gray-200 w-full"
+          className="flex sm:flex-row flex-col items-center sm:items-start justify-center sm:justify-start p-3 text-lg font-medium text-black rounded-md transition hover:bg-gray-200 sm:w-full w-16"
         >
           <FaSignOutAlt />
-          <span className="hidden sm:inline">Sign Out</span>
+          <span className="hidden sm:inline ml-3">Sign Out</span>
         </NavLink>
       </nav>
+
     </div>
   );
 }

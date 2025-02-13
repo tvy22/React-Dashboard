@@ -10,9 +10,9 @@ const CreateInvoice = () => {
   return (
     <div 
       className="
-        max-w-full sm:w-[90%] md:w-[70%] lg:w-[70%] mx-auto 
+        max-w-full sm:w-[90%] md:w-[70%] lg:w-[80%] mx-auto 
         p-6 bg-white shadow-md rounded-lg 
-        mt-16 sm:pt-20 md:pt-10 lg:pt-8  
+        mt-16 sm:pt-20 md:pt-0 lg:pt-0  
         md:ml-[220px] lg:ml-[260px] sm:ml-[160px]"  
     >
       <h2 className="text-2xl sm:text-xl font-semibold mb-4">Create Invoice</h2>
